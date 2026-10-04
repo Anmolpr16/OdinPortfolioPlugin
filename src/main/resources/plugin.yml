@@ -1,0 +1,24 @@
+name: OdinPortfolioPlugin
+version: 2.0.0
+main: io.github.anmolgoraya.odinportfolioplugin.OdinPortfolioPlugin
+description: Portfolio-quality Paper plugin with GUI, cooldowns, persistent player data, commands, and configuration.
+author: Anmol
+api-version: '26.2'
+
+commands:
+  odin:
+    description: Main Odin plugin command
+    usage: /odin <menu|stats|setspawn|reload>
+    aliases: [odinplugin]
+    permission: odin.use
+
+permissions:
+  odin.use:
+    description: Allows use of /odin
+    default: true
+  odin.reload:
+    description: Allows reloading the plugin configuration
+    default: op
+  odin.setspawn:
+    description: Allows setting the Odin spawn location
+    default: op

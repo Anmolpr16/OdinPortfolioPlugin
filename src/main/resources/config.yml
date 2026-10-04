@@ -1,0 +1,34 @@
+messages:
+  prefix: "<gradient:gold:yellow><bold>ODIN</bold></gradient> <dark_gray>»</dark_gray> "
+  no-permission: "<red>You do not have permission."
+  unknown-command: "<red>Usage: /odin <menu|stats|setspawn|reload>"
+  reloaded: "<green>Configuration reloaded."
+  spawn-set: "<green>Odin spawn location saved."
+  welcome: "<gold>Welcome, <white>%player%<gold>! Use <yellow>/odin menu<gold>."
+  cooldown: "<red>Please wait <yellow>%seconds%s <red>before using that again."
+
+menu:
+  title: "<dark_gray><bold>Odin Control Panel"
+  size: 27
+  items:
+    profile:
+      slot: 11
+      material: PLAYER_HEAD
+      name: "<gold><bold>My Profile"
+      lore:
+        - "<gray>View your persistent player stats."
+    spawn:
+      slot: 13
+      material: COMPASS
+      name: "<aqua><bold>Odin Spawn"
+      lore:
+        - "<gray>Teleport to the configured spawn."
+    stats:
+      slot: 15
+      material: EXPERIENCE_BOTTLE
+      name: "<green><bold>Statistics"
+      lore:
+        - "<gray>View your session and lifetime stats."
+
+cooldowns:
+  spawn-seconds: 10
